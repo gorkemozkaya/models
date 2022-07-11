@@ -238,7 +238,7 @@ def wmt_transformer_large() -> cfg.ExperimentConfig:
               max_seq_length=64
           ),
           validation_data=wmt_dataloader.WMTDataConfig(
-              tfds_name='wmt_translate/tr-en',
+              tfds_name='wmt16_translate/tr-en',
               tfds_split='test',
               src_lang='en',
               tgt_lang='tr',
